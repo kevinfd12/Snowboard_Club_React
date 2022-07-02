@@ -1,7 +1,12 @@
 import React from 'react';
+import { Navbar } from './components/Navbar/Navbar';
+import { SliderBar } from './components/Navbar/sliderNav';
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => (
+  <>
+    <Navbar />
+    <SliderBar />
+  </>
+);
 
 export default App;
