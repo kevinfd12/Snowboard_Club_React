@@ -7,13 +7,21 @@ const sliderNav = [
   { text: 'Fun' },
   { text: 'friendship' },
   { text: 'freedom' },
+  { text: 'nature' },
 ];
 
-const sliderList = sliderNav.map((slide, index) => (
-  <li className="sliderList_item">
-    <img className="images" alt="" src={sliderPics[index]} />
-    <p className="slider_name">{slide.text}</p>
-  </li>
+const pics = sliderNav.map((slide, index) => (
+  <img key={`slide${index}`} className="slider__img" alt="" src={sliderPics[index]} />
+));
+const txt = sliderNav.map((slide) => (
+  <p className="slider__text" key={`a${slide}`}>
+    {slide.text}
+  </p>
 ));
 
-export const SliderBar = () => <div className="sliderList">{sliderList}</div>;
+export const SliderBar = () => (
+  <div className="slider home__slider">
+    {pics}
+    {txt}
+  </div>
+);
