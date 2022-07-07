@@ -7,3 +7,11 @@
 button {
   border: none;
 }
+
+.paragraph {
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    line-height: 1.75;
+  }
+}

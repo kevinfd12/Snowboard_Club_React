@@ -19,3 +19,54 @@
     }
   }
 }
+
+@mixin burger-menu {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 60px;
+
+  .line {
+    fill: none;
+    transition: stroke-dasharray 800ms, stroke-dashoffset 800ms;
+    stroke: $blue;
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  .top {
+    stroke-dasharray: 40 130;
+  }
+
+  .middle {
+    stroke-dasharray: 40 140;
+  }
+
+  .bottom {
+    stroke-dasharray: 40 205;
+  }
+
+  &.active {
+    .line {
+      stroke: $red;
+    }
+
+    .top {
+      stroke-dasharray: 75 130;
+      stroke-dashoffset: -63px;
+    }
+
+    .middle {
+      stroke-dashoffset: -102px;
+    }
+
+    .bottom {
+      stroke-dasharray: 110 205;
+      stroke-dashoffset: -86px;
+    }
+  }
+}

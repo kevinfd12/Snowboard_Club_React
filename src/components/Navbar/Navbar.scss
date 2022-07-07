@@ -21,7 +21,7 @@
     width: 100%;
 
     .burger {
-      // @include burger-menu;
+      @include burger-menu;
     }
 
     @media (min-width: 1024px) {
