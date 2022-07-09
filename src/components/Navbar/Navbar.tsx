@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
 
-const navNames = ['home', 'about', 'calendar', 'membership', 'news', 'partners', 'contact'];
+export const navNames = ['about', 'calendar', 'home', 'membership', 'news', 'partners', 'contact'];
 
 const navList = navNames.map((name) => (
   <li className="list__item" key={name}>

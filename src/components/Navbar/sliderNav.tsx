@@ -13,8 +13,9 @@ const sliderNav = [
 const pics = sliderNav.map((slide, index) => (
   <img key={`slide${index}`} className="slider__img" alt="" src={sliderPics[index]} />
 ));
+
 const txt = sliderNav.map((slide) => (
-  <p className="slider__text" key={`a${slide}`}>
+  <p className="slider__text" key={`a${slide.text}`}>
     {slide.text}
   </p>
 ));
