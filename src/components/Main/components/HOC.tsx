@@ -6,6 +6,8 @@ type HOCProps = {
   content: any;
 };
 
+const empty = '';
+
 export const HOC = ({ name, content }: HOCProps) => {
   const condition = name !== 'about' && (
     <>
