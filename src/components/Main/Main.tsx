@@ -2,6 +2,7 @@ import React from 'react';
 import { navNames } from '../Navbar/Navbar';
 import { About } from './components/About/About';
 import { HOC } from './components/HOC';
+import './Main.scss';
 
 const temArray = navNames.filter((item) => item !== 'home');
 

@@ -1,3 +1,19 @@
+// gradients:
+@mixin linear-border($border_color1, $border_color2) {
+  border: thick solid;
+  border-image-slice: 1;
+  border-width: thick;
+  border-image-source: linear-gradient($border_color1, $border_color2);
+}
+@mixin linear-text($color1, $color2) {
+  background: -webkit-linear-gradient($color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin linear-btn($btn_color1, $btn_color2) {
+  background-image: linear-gradient(to right, $btn_color1, $btn_color2, $btn_color1, $btn_color2);
+}
+
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
   $u1: unit($min-vw);
   $u2: unit($max-vw);
