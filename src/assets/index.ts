@@ -12,7 +12,7 @@ import pic4 from './interlude-md-4.webp';
 import pic5 from './interlude-md-5.webp';
 
 export const sliderPics = [slider0, slider1, slider2, slider3, slider4, slider5];
-export const picsObj: any = {
+export const picsObj: { [key: string]: string } = {
   partners: pic1,
   calendar: pic2,
   membership: pic3,

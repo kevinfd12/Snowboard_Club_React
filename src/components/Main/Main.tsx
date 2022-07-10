@@ -5,7 +5,7 @@ import { HOC } from './components/HOC';
 
 const temArray = navNames.filter((item) => item !== 'home');
 
-const tempObject: any = {
+const tempObject: { [key: string]: JSX.Element | null } = {
   about: <About />,
   calendar: null,
   membership: null,

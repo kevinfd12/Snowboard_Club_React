@@ -3,7 +3,7 @@ import { picsObj } from '../../../assets';
 
 type HOCProps = {
   name: string;
-  content: any;
+  content: JSX.Element | null;
 };
 
 export const HOC = ({ name, content }: HOCProps) => {
