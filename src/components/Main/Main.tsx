@@ -1,6 +1,8 @@
 import React from 'react';
 import { navNames } from '../Navbar/Navbar';
 import { About } from './components/About/About';
+import { Calendar } from './components/Calendar/Calendar';
+import { Membership } from './components/Membership/Membership';
 import { HOC } from './components/HOC';
 import './Main.scss';
 
@@ -8,8 +10,8 @@ const temArray = navNames.filter((item) => item !== 'home');
 
 const tempObject: { [key: string]: JSX.Element | null } = {
   about: <About />,
-  calendar: null,
-  membership: null,
+  calendar: <Calendar />,
+  membership: <Membership />,
   partners: null,
   news: null,
   contact: null,
