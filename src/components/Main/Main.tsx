@@ -2,6 +2,7 @@ import React from 'react';
 import { navNames } from '../Navbar/Navbar';
 import { About } from './components/About/About';
 import { Calendar } from './components/Calendar/Calendar';
+import { News } from './components/News/News';
 import { Membership } from './components/Membership/Membership';
 import { HOC } from './components/HOC';
 import './Main.scss';
@@ -13,7 +14,7 @@ const tempObject: { [key: string]: JSX.Element | null } = {
   calendar: <Calendar />,
   membership: <Membership />,
   partners: null,
-  news: null,
+  news: <News />,
   contact: null,
 };
 
